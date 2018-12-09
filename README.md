@@ -13,14 +13,25 @@ nn = new neuralNetwork([27, H1, H2, O]);
 Pass an array as a parameter which function as the network configuration. The first element will be the amount of input nodes and must be 27 nodes. The last layer is the output layer and must be the length of the function array we will pass to the network later on. All the layers inbetween are hidden layers. 
 
 
-<h3> Pass output functions: </h3>
+<h3> Set output functions: </h3>
 
 ```javascript
 nn.setOutput(outputF);
 ```
-Every output node must be linked to a function. The array of funtions must be the same size as the amount of output nodes. The output node with the highest value will decide what function will be excecuted. If output 1 turns out to be the highest probability, function[1] is excecuted. 
+Every output node must be linked to a function. The array of funtions must be the same size as the amount of output nodes. The output node with the highest value will decide what function will be excecuted. If output 1 turns out to be the highest probability, function[1] is excecuted. OutputF template:
 
-<h3> Pass data correlated with the output function: </h3>
+```javascript
+let outputF = [
+  function(){
+    console.log("executed if node 0 of the output layer has the highest value")
+  },
+  function(){
+    console.log("executed if node 1 of the output layer has the highest value")
+  }
+]
+```
+
+<h3> Set data (correlated with the output function: )</h3>
 
 ```javascript
 nn.setOutput(outputF);
