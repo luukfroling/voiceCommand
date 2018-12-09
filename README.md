@@ -1,9 +1,9 @@
 # voiceCommand
 Easy library for voice commands using machine learning in javascript
 
-<h1> Documentation </h1>
-
 The library was written with the intention of being easy to use for people with no machine learning background. The network configuration (amount of layers/nodes) it the only machine learning related setting of the library. 
+
+<h1> Documentation </h1>
 
 <h3> Initialise the network: </h3> 
 
