@@ -52,7 +52,7 @@ let data = [
 ```javascript
 nn.setRecognition(cont);
 ```
-Initialises the part of the neural network library which uses the web speech API to recognise text and automatically run the network on the input. setRecognition does not start the recognition yet. cont is a boolean parameter which allows the user to control wether the program should stop listening after a succesful recognition. Set const true if the recognition should continue untill stopRecognition is called, otherwise set false. 
+Initialises the part of the neural network library which uses the web speech API to recognise text and automatically run the network on the input. setRecognition does not start the recognition yet. cont is a boolean parameter which allows the user to control wether the program should stop listening after a succesful recognition. Set cont true if the recognition should continue untill stopRecognition is called, otherwise set false. 
 
 <h3> beginRecognition </h3> 
 
