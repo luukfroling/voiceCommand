@@ -6,6 +6,7 @@ Easy library for voice commands using machine learning in javascript
 The library was written with the intention of being easy to use for people with no machine learning background. The network configuration (amount of layers/nodes) it the only machine learning related setting of the library. 
 
 <h3> Initialise the network: </h3> 
+
 ```javascript
 nn = new neuralNetwork([27, H1, H2, O]);
 ```
@@ -13,12 +14,14 @@ Pass an array as a parameter which function as the network configuration. The fi
 
 
 <h3> Pass output functions: </h3>
+
 ```javascript
 nn.setOutput(outputF);
 ```
 Every output node must be linked to a function. The array of funtions must be the same size as the amount of output nodes. The output node with the highest value will decide what function will be excecuted. If output 1 turns out to be the highest probability, function[1] is excecuted. 
 
 <h3> Pass data correlated with the output function: </h3>
+
 ```javascript
 nn.setOutput(outputF);
 ```
