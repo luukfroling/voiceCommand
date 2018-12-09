@@ -47,8 +47,15 @@ let data = [
 ]
 ```
 
+<h3> run </h3>
+
+```javascript
+nn.run(str);
+```
+A function which lets the neural network make a guess based on the tex passed as parameter. The run function will automatically execute one of the outputfunctions set with the setOutput command. The input string can also be automatically formed from speech with the web speech API described below.
+
 <h3> setRecognition </h3> 
- 
+
 ```javascript
 nn.setRecognition(cont);
 ```
