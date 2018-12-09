@@ -47,7 +47,7 @@ let data = [
 ]
 ```
 
-<h3> setRecognition <h3> 
+<h3> setRecognition </h3> 
  
 ```javascript
 nn.setRecognition(cont);
@@ -63,9 +63,7 @@ This will begin the recognition. The next time speech is recognised the neural n
 
 <h3> endRecognition </h3>
 
-
 ```javascript
-function hello(name) {
-  console.log(name);
-}
+nn.endRecognition();
 ```
+A function to end the speech recognition while using continuous mode. 
