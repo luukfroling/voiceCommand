@@ -74,3 +74,9 @@ This will begin the recognition. The next time speech is recognised the neural n
 nn.endRecognition();
 ```
 A function to end the speech recognition while using continuous mode. 
+
+<h1> 'In depth' explanation </h1> 
+
+The network uses a LSTM cell between the input and first hidden layer to process series of data like a string
+
+TODO: finish this.
